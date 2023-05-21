@@ -7,7 +7,7 @@ This repository contains the project developed during the ETHDam privacy hackath
 
 It was developered not only to experiment with the idea of trustless vesting, but also as an excuse to build a smart contract to experiment with the Scroll zkEVM alpha testnet (https://scroll.io/).
 
-The PoC contract is deployed at https://blockscout.scroll.io/address/0xD8a5a9b31c3C0232E196d518E89Fd8bF83AcAd43
+The PoC verified 🚀 contract is deployed at 🔗 https://blockscout.scroll.io/address/0x51A1ceB83B83F1985a81C295d1fF28Afef186E02
 
 The Solidity smart contract implements a token vesting mechanism that allows users to stake ERC20 tokens and gradually release them over a predefined vesting period. The contract supports multiple beneficiaries, each with their own vesting schedules for different tokens.
 
