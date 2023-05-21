@@ -3,9 +3,9 @@
 
 ## Description
 
-This repository contains the project developed during the ETHDam privacy event in Amsterdam hackathon. Token Vesting is a proof of concept for a general purpose contract that can be used to escrow funds that are released on a certain time schedule.
+This repository contains the project developed during the ETHDam privacy hackathon in Amsterdam. Token Vesting is a proof of concept for a general purpose contract that can be used to escrow funds that are released on a certain open and predicatable time schedule.
 
-It was developered not only to experiment with the idea of trustless vesting, but also an excuse to build a smart contract to experiment with the Scroll zkEVM alpha testnet (https://scroll.io/).
+It was developered not only to experiment with the idea of trustless vesting, but also as an excuse to build a smart contract to experiment with the Scroll zkEVM alpha testnet (https://scroll.io/).
 
 The PoC contract is deployed at https://blockscout.scroll.io/address/0xD8a5a9b31c3C0232E196d518E89Fd8bF83AcAd43
 
@@ -70,7 +70,8 @@ He wants to demonstrate good faith but doesn't want to pay up front.
 Bob depsits 10,000 USDT using the stakeFunds call nominating Alice as the beneficiary.
 Bob also sets the cliff to be in 6 months time with a full availability of funds after 1 year.
 
-![image](https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/6a1e579f-82c4-4383-847e-cbfce9238766)
+![image](https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/704b3299-7ebb-4307-81ae-5b3710f7233e)
+
 
 Alice sees the funds sent to the Vesting contract nominating her as a beneficiary and when she can begin to claim.
 After 6 months, Alice can linearly claim more and more of the funds as they unlock by calling withdrawFunds.
