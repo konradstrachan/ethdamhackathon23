@@ -6,6 +6,8 @@ This repository contains the project developed during the ETHDam hackathon in Am
 
 It was developered not only to experiment with the idea of trustless vesting, but also as an excuse to build a smart contract to experiment with the Scroll zkEVM alpha testnet (https://scroll.io/).
 
+![image](https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/7ef479a3-6b2c-41c9-bb5f-edba8ac3f525)
+
 The PoC verified 🚀 contract is deployed at 🔗 https://blockscout.scroll.io/address/0x51A1ceB83B83F1985a81C295d1fF28Afef186E02
 
 The Solidity smart contract implements a token vesting mechanism that allows users to stake ERC20 tokens and gradually release them over a predefined vesting period. The contract supports multiple beneficiaries, each with their own vesting schedules for different tokens.
@@ -105,3 +107,6 @@ This project is licensed under the MIT License.
 This smart contract is the product of a few hours of rapid prototyping as part of a Hackathon. Care was taken to ensure it is free from defects and security vulnerabilities but it should not be considered production ready and is thus provided as-is without any warranty. 
 
 Anyone wishing to use this should exercise caution and perform due diligence before using this contract in a production environment.
+
+![image](https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/1e03507a-4958-42f8-88a9-36f8e17349ef)
+
