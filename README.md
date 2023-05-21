@@ -1,9 +1,8 @@
-
-# Token Vesting
+# Multi-Token transparent vesting
 
 ## Description
 
-This repository contains the project developed during the ETHDam privacy hackathon in Amsterdam. Token Vesting is a proof of concept for a general purpose contract that can be used to escrow funds that are released on a certain open and predicatable time schedule.
+This repository contains the project developed during the ETHDam hackathon in Amsterdam. Token Vesting is a proof of concept for a general purpose contract that can be used to escrow funds that are released on a certain open and predicatable time schedule.
 
 It was developered not only to experiment with the idea of trustless vesting, but also as an excuse to build a smart contract to experiment with the Scroll zkEVM alpha testnet (https://scroll.io/).
 
@@ -13,19 +12,23 @@ The Solidity smart contract implements a token vesting mechanism that allows use
 
 ## Features
 
+* Fully transparent escrowed funds
 * Multiple beneficiaries can have staked ERC20 tokens
 * Each beneficiary can have multiple vesting schedules for different tokens
-* The vesting schedules include a cliff time and an end time
+* The vesting schedules include a cliff time and an end time completely configurable by the vesting originiator
 * Beneficiaries cannot withdraw funds before the cliff time
 * The amount available for withdrawal is restricted based on the elapsed time since the cliff time
-* Withdrawn funds are transferred from the contract to the beneficiary
-* The contract is compatible with any ERC20 token that implements the transfer and transferFrom functions
+* Withdrawn funds are transferred from the contract to the beneficiary directly
+* The contract is compatible with any ERC20 token that implements the transfer and transferFrom functions (not native ETH/chain tokens currently)
 
 ## Technologies Used
-* Solidity for smart contract development 
+* Solidity for smart contract development
 * React, Hardhat, NextJS for rapid prototying and testing (via Scaffold-ETH 2)
+* Scroll for deploying and demoing contracts
 
 ## Usage
+
+Smart contract public function reference:
 
 ### Stake Funds: stakeFunds
 
@@ -64,19 +67,18 @@ The contract emits the following events:
 
 ## Worked example
 
-Bob wants to pay Alice 10,000 USDT for a year of contributions to his project.
-He wants to demonstrate good faith but doesn't want to pay up front.
+👨 Bob wants to pay Alice 10,000 USDT for a year of contributions to his project.
+👨 He wants to demonstrate good faith but doesn't want to pay up front.
 
-Bob depsits 10,000 USDT using the stakeFunds call nominating Alice as the beneficiary.
-Bob also sets the cliff to be in 6 months time with a full availability of funds after 1 year.
+💸 Bob depsits 10,000 USDT using the stakeFunds call nominating Alice as the beneficiary.
+⌛ Bob also sets the cliff to be in 6 months time with a full availability of funds after 1 year.
 
 ![image](https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/704b3299-7ebb-4307-81ae-5b3710f7233e)
 
+👒 Alice sees the funds sent to the Vesting contract nominating her as a beneficiary and when she can begin to claim.
+💰 After 6 months, Alice can linearly claim more and more of the funds as they unlock by calling withdrawFunds.
 
-Alice sees the funds sent to the Vesting contract nominating her as a beneficiary and when she can begin to claim.
-After 6 months, Alice can linearly claim more and more of the funds as they unlock by calling withdrawFunds.
-
-Alice is happy.
+🤗 Alice is happy.
 
 https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/e65c9308-6d1e-4d5f-88f0-2d1ddeb33a01
 
