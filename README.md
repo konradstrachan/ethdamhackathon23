@@ -68,15 +68,19 @@ The contract emits the following events:
 ## Worked example
 
 👨 Bob wants to pay Alice 10,000 USDT for a year of contributions to his project.
+
 👨 He wants to demonstrate good faith but doesn't want to pay up front.
 
 💸 Bob depsits 10,000 USDT using the stakeFunds call nominating Alice as the beneficiary.
+
 ⌛ Bob also sets the cliff to be in 6 months time with a full availability of funds after 1 year.
 
 ![image](https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/704b3299-7ebb-4307-81ae-5b3710f7233e)
 
 👒 Alice sees the funds sent to the Vesting contract nominating her as a beneficiary and when she can begin to claim.
+
 💰 After 6 months, Alice can linearly claim more and more of the funds as they unlock by calling withdrawFunds.
+
 
 🤗 Alice is happy.
 
