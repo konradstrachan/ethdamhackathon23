@@ -75,7 +75,10 @@ After 6 months, Alice can linearly claim more and more of the funds as they unlo
 
 Alice is happy.
 
-This example is shown in a screen recording of the interaction : https://www.youtube.com/watch?v=CGLAxcE440c
+https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/e65c9308-6d1e-4d5f-88f0-2d1ddeb33a01
+
+This example is shown in a screen recording of the interaction, also available at https://www.youtube.com/watch?v=CGLAxcE440c.
+
 In this recording the Vesting contract at 0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0 is used with a test ERC20 token deployed to 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853.
 For simplicity, both Bob and Alice share the address 0x800Fe78384450Ecb26418f61C6e16d9FA7877fA8.
 
