@@ -62,6 +62,23 @@ The contract emits the following events:
 
 * FundsWithdrawn: Emitted when funds are withdrawn from the contract. Contains information about the beneficiary, token, schedule index, and amount.
 
+## Worked example
+
+Bob wants to pay Alice 10,000 USDT for a year of contributions to his project.
+He wants to demonstrate good faith but doesn't want to pay up front.
+
+Bob depsits 10,000 USDT using the stakeFunds call nominating Alice as the beneficiary.
+Bob also sets the cliff to be in 6 months time with a full availability of funds after 1 year.
+
+Alice sees the funds sent to the Vesting contract nominating her as a beneficiary and when she can begin to claim.
+After 6 months, Alice can linearly claim more and more of the funds as they unlock by calling withdrawFunds.
+
+Alice is happy.
+
+This example is shown in a screen recording of the interaction : https://www.youtube.com/watch?v=CGLAxcE440c
+In this recording the Vesting contract at 0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0 is used with a test ERC20 token deployed to 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853.
+For simplicity, both Bob and Alice share the address 0x800Fe78384450Ecb26418f61C6e16d9FA7877fA8.
+
 ## Deployment
 
 The contract can be deployed on any EVM network like Ethereum or the Scroll zkEVM network using a compatible development framework.
