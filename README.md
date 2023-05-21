@@ -70,6 +70,8 @@ He wants to demonstrate good faith but doesn't want to pay up front.
 Bob depsits 10,000 USDT using the stakeFunds call nominating Alice as the beneficiary.
 Bob also sets the cliff to be in 6 months time with a full availability of funds after 1 year.
 
+![image](https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/6a1e579f-82c4-4383-847e-cbfce9238766)
+
 Alice sees the funds sent to the Vesting contract nominating her as a beneficiary and when she can begin to claim.
 After 6 months, Alice can linearly claim more and more of the funds as they unlock by calling withdrawFunds.
 
