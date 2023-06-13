@@ -1,5 +1,9 @@
 # Multi-Token transparent vesting
 
+![image](https://github.com/konradstrachan/ethdamhackathon23/assets/21056525/22499f3e-ebb5-4b04-b4ee-a3bbfbf4e777)
+
+This project won the [Best on Scroll: DeFi track #2 prize](https://twitter.com/BuildWithScroll/status/1661402850512244737) at ETHDam 2023 ❤️
+
 ## Description
 
 This repository contains the project developed during the ETHDam hackathon in Amsterdam. Token Vesting is a proof of concept for a general purpose contract that can be used to escrow funds that are released on a certain open and predicatable time schedule.
